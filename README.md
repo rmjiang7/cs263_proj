@@ -19,3 +19,41 @@ https://stackoverflow.com/questions/25811445/what-are-the-primary-differences-be
 https://www.reddit.com/r/golang/comments/41dw90/gccgo_vs_go_calling_overhead_with_c_few_questions/
 
 https://golang.org/doc/install/gccgo
+
+## Documentation
+
+### Installation
+
+Follow [this setup guide](https://golang.org/doc/code.html).
+Then:
+
+```bash
+cd $GOPATH/src/github.com/user
+git clone https://github.com/rmjiang7/cs263_proj.git
+cd cs263_proj
+go install
+```
+
+### Profiling Code
+
+**TODO:** Current code doesn't seem to run long enough to generate and profiling data...
+
+How to generate profiling files:
+
+```bash
+cs263_proj -cpuprofile cpu.prof -memprofile mem.prof
+```
+
+How to view profiling files:
+
+```bash
+go tool pprof cpu.prof
+```
+
+[Link to more commands and examples](https://blog.golang.org/profiling-go-programs)
+
+**TODO:** Figure out how to use webserver for visualizations? :
+
+```go
+import _ "net/http/pprof"
+```
