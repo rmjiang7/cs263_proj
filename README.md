@@ -22,6 +22,8 @@ https://golang.org/doc/install/gccgo
 
 ## Documentation
 
+Tested using gc 1.10 and gcc8.
+
 ### Installation
 
 Follow [this setup guide](https://golang.org/doc/code.html).
