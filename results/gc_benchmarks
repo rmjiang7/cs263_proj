@@ -1,0 +1,10 @@
+?   	_/home/rmjiang/cs263_proj	[no test files]
+goos: linux
+goarch: amd64
+BenchmarkMCPI-48    	       2	1511190330 ns/op	  414672 B/op	    1770 allocs/op
+BenchmarkMCPI-48    	       1	1137530264 ns/op	  265456 B/op	    1772 allocs/op
+BenchmarkMCPI-48    	       1	1386271601 ns/op	  151728 B/op	     995 allocs/op
+BenchmarkMCPI-48    	       1	1084843618 ns/op	  210768 B/op	    1594 allocs/op
+BenchmarkMCPI-48    	       1	1350797985 ns/op	  117744 B/op	    1236 allocs/op
+PASS
+ok  	_/home/rmjiang/cs263_proj/benchmarks	8.671s

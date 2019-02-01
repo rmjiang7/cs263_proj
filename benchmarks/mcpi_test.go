@@ -4,10 +4,10 @@
 package main
 
 import (
-  "fmt"
   "sync"
   "math/rand"
   "math"
+  "testing"
 )
 
 // Compute MC estimate of PI
@@ -25,7 +25,7 @@ func estimate_pi(n_draws int, wg *sync.WaitGroup, estimates chan float64) {
   estimates <- 4 * count/float64(n_draws)
 }
 
-func main() {
+func get_estimates() {
 
   // Concurrent estimates of pi
   var wg sync.WaitGroup
@@ -60,7 +60,12 @@ func main() {
     sd += math.Pow(values[i] - mean, 2)
   }
   sd = math.Sqrt(sd/float64(n_estimates))
-  
-  fmt.Printf("N estimate : %d, N samples per estimate : %d\n", n_estimates, n_draws)
-  fmt.Printf("Mean: %f, Std: %f\n", mean, sd)
 }
+
+func BenchmarkMCPI(b *testing.B) {
+  for i:= 0; i < b.N; i++ {
+    get_estimates()
+  }
+}
+
+

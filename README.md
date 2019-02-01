@@ -36,7 +36,16 @@ cd cs263_proj
 go install
 ```
 
+### Native Go Benchmarking
+
+The run_bechmarks.sh script runs the benchmarks in the benchmarks directory under both the gc and gccgo compilers with the specified gcc flags. Results are stored in the results
+directory.
+
+**TODO** Write scripts to analyze the results.
+
+
 ### Profiling Code
+
 
 **TODO:** Current code doesn't seem to run long enough to generate and profiling data...
 
