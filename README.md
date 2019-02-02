@@ -43,6 +43,10 @@ directory.
 
 **TODO** Write scripts to analyze the results.
 
+Quick analysis of the results can be done using the [benchstats](https://godoc.org/golang.org/x/perf/cmd/benchstat) tool in the results directory.
+
+benchstat gc_benchmarks gccgo_benchmarks
+
 
 ### Profiling Code
 
