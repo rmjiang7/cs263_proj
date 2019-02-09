@@ -1,10 +1,20 @@
-?   	_/home/rmjiang/cs263_proj	[no test files]
+?   	_/home/bhuynh/Projects/cs263_proj	[no test files]
 goos: linux
 goarch: amd64
-BenchmarkMCPI-48    	       2	1511190330 ns/op	  414672 B/op	    1770 allocs/op
-BenchmarkMCPI-48    	       1	1137530264 ns/op	  265456 B/op	    1772 allocs/op
-BenchmarkMCPI-48    	       1	1386271601 ns/op	  151728 B/op	     995 allocs/op
-BenchmarkMCPI-48    	       1	1084843618 ns/op	  210768 B/op	    1594 allocs/op
-BenchmarkMCPI-48    	       1	1350797985 ns/op	  117744 B/op	    1236 allocs/op
+BenchmarkRelu-8      	     200	   9320425 ns/op	 8003666 B/op	       2 allocs/op
+BenchmarkRelu-8      	     200	   9719071 ns/op	 8003658 B/op	       2 allocs/op
+BenchmarkRelu-8      	     200	   9317008 ns/op	 8003657 B/op	       2 allocs/op
+BenchmarkRelu-8      	     200	   8955763 ns/op	 8003648 B/op	       2 allocs/op
+BenchmarkRelu-8      	     200	   8945269 ns/op	 8003648 B/op	       2 allocs/op
+BenchmarkSigmoid-8   	       1	1648787721 ns/op	99644224 B/op	     266 allocs/op
+BenchmarkSigmoid-8   	       1	1634168386 ns/op	99622728 B/op	     189 allocs/op
+BenchmarkSigmoid-8   	       1	1646696899 ns/op	99620832 B/op	     171 allocs/op
+BenchmarkSigmoid-8   	       1	1629970319 ns/op	91229888 B/op	     169 allocs/op
+BenchmarkSigmoid-8   	       1	1630726286 ns/op	99618672 B/op	     168 allocs/op
+BenchmarkMCPI-8      	       5	 282062752 ns/op	   45987 B/op	     271 allocs/op
+BenchmarkMCPI-8      	       5	 269204390 ns/op	   42160 B/op	     253 allocs/op
+BenchmarkMCPI-8      	       5	 281047746 ns/op	   42489 B/op	     257 allocs/op
+BenchmarkMCPI-8      	       5	 281445848 ns/op	   47494 B/op	     290 allocs/op
+BenchmarkMCPI-8      	       5	 260698614 ns/op	   43721 B/op	     269 allocs/op
 PASS
-ok  	_/home/rmjiang/cs263_proj/benchmarks	8.671s
+ok  	_/home/bhuynh/Projects/cs263_proj/benchmarks	35.181s

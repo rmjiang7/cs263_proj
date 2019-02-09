@@ -36,6 +36,14 @@ cd cs263_proj
 go install
 ```
 
+### Additional Dependencies
+
+Install gonum and test installation.
+```bash
+go get -u -t gonum.org/v1/gonum/...
+go test gonum.org/v1/...
+```
+
 ### Native Go Benchmarking
 
 The run_bechmarks.sh script runs the benchmarks in the benchmarks directory under both the gc and gccgo compilers with the specified gcc flags. Results are stored in the results
