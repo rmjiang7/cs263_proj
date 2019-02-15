@@ -1,1 +1,19 @@
-FAIL	_/home/bhuynh/Projects/cs263_proj/benchmarks [build failed]
+goos: linux
+goarch: amd64
+BenchmarkMCPI-48       	       1	7987614831 ns/op	 3036912 B/op	    4005 allocs/op
+BenchmarkMCPI-48       	       1	7955340288 ns/op	  619760 B/op	    2964 allocs/op
+BenchmarkMCPI-48       	       1	8735625783 ns/op	  612208 B/op	    3105 allocs/op
+BenchmarkMCPI-48       	       1	9205149366 ns/op	  463824 B/op	    2826 allocs/op
+BenchmarkMCPI-48       	       1	9818020003 ns/op	  313872 B/op	    2916 allocs/op
+BenchmarkMatMult-48    	       1	4405382522 ns/op	 8003728 B/op	       3 allocs/op
+BenchmarkMatMult-48    	       1	4227853299 ns/op	 8003632 B/op	       2 allocs/op
+BenchmarkMatMult-48    	       1	4278771794 ns/op	 8011056 B/op	       5 allocs/op
+BenchmarkMatMult-48    	       1	4745699974 ns/op	 8003632 B/op	       2 allocs/op
+BenchmarkMatMult-48    	       1	5355184472 ns/op	 8003632 B/op	       2 allocs/op
+BenchmarkRelu-48       	      50	  30280840 ns/op	 8003930 B/op	       2 allocs/op
+BenchmarkRelu-48       	      50	  32096919 ns/op	 8003632 B/op	       2 allocs/op
+BenchmarkRelu-48       	      50	  32001537 ns/op	 8003780 B/op	       2 allocs/op
+BenchmarkRelu-48       	      50	  29774737 ns/op	 8003632 B/op	       2 allocs/op
+BenchmarkRelu-48       	      50	  27526096 ns/op	 8003632 B/op	       2 allocs/op
+PASS
+ok  	_/home/rmjiang/cs263_proj/benchmarks	78.810s

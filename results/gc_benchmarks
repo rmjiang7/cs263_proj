@@ -1,20 +1,19 @@
-?   	_/home/bhuynh/Projects/cs263_proj	[no test files]
 goos: linux
 goarch: amd64
-BenchmarkRelu-8      	     200	   9320425 ns/op	 8003666 B/op	       2 allocs/op
-BenchmarkRelu-8      	     200	   9719071 ns/op	 8003658 B/op	       2 allocs/op
-BenchmarkRelu-8      	     200	   9317008 ns/op	 8003657 B/op	       2 allocs/op
-BenchmarkRelu-8      	     200	   8955763 ns/op	 8003648 B/op	       2 allocs/op
-BenchmarkRelu-8      	     200	   8945269 ns/op	 8003648 B/op	       2 allocs/op
-BenchmarkSigmoid-8   	       1	1648787721 ns/op	99644224 B/op	     266 allocs/op
-BenchmarkSigmoid-8   	       1	1634168386 ns/op	99622728 B/op	     189 allocs/op
-BenchmarkSigmoid-8   	       1	1646696899 ns/op	99620832 B/op	     171 allocs/op
-BenchmarkSigmoid-8   	       1	1629970319 ns/op	91229888 B/op	     169 allocs/op
-BenchmarkSigmoid-8   	       1	1630726286 ns/op	99618672 B/op	     168 allocs/op
-BenchmarkMCPI-8      	       5	 282062752 ns/op	   45987 B/op	     271 allocs/op
-BenchmarkMCPI-8      	       5	 269204390 ns/op	   42160 B/op	     253 allocs/op
-BenchmarkMCPI-8      	       5	 281047746 ns/op	   42489 B/op	     257 allocs/op
-BenchmarkMCPI-8      	       5	 281445848 ns/op	   47494 B/op	     290 allocs/op
-BenchmarkMCPI-8      	       5	 260698614 ns/op	   43721 B/op	     269 allocs/op
+BenchmarkMCPI-48       	       1	1900864127 ns/op	  619984 B/op	    3083 allocs/op
+BenchmarkMCPI-48       	       1	2895344761 ns/op	  375504 B/op	    1742 allocs/op
+BenchmarkMCPI-48       	       1	1643501123 ns/op	  210032 B/op	    1599 allocs/op
+BenchmarkMCPI-48       	       1	2357736974 ns/op	  369200 B/op	    2096 allocs/op
+BenchmarkMCPI-48       	       1	2235208620 ns/op	  186384 B/op	    1809 allocs/op
+BenchmarkMatMult-48    	       1	6396963608 ns/op	 8003632 B/op	       2 allocs/op
+BenchmarkMatMult-48    	       1	6285710311 ns/op	 8005424 B/op	       5 allocs/op
+BenchmarkMatMult-48    	       1	5735170168 ns/op	 8003632 B/op	       2 allocs/op
+BenchmarkMatMult-48    	       1	5546211074 ns/op	 8003632 B/op	       2 allocs/op
+BenchmarkMatMult-48    	       1	5257303585 ns/op	 8003632 B/op	       2 allocs/op
+BenchmarkRelu-48       	     100	  12345826 ns/op	 8003703 B/op	       2 allocs/op
+BenchmarkRelu-48       	     100	  10936202 ns/op	 8003632 B/op	       2 allocs/op
+BenchmarkRelu-48       	     100	  11158443 ns/op	 8003667 B/op	       2 allocs/op
+BenchmarkRelu-48       	     100	  11413906 ns/op	 8003632 B/op	       2 allocs/op
+BenchmarkRelu-48       	     100	  11465151 ns/op	 8003632 B/op	       2 allocs/op
 PASS
-ok  	_/home/bhuynh/Projects/cs263_proj/benchmarks	35.181s
+ok  	_/home/rmjiang/cs263_proj/benchmarks	47.616s
