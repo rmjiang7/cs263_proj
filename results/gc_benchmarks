@@ -1,19 +1,24 @@
 goos: linux
 goarch: amd64
-BenchmarkMCPI-48       	       1	1900864127 ns/op	  619984 B/op	    3083 allocs/op
-BenchmarkMCPI-48       	       1	2895344761 ns/op	  375504 B/op	    1742 allocs/op
-BenchmarkMCPI-48       	       1	1643501123 ns/op	  210032 B/op	    1599 allocs/op
-BenchmarkMCPI-48       	       1	2357736974 ns/op	  369200 B/op	    2096 allocs/op
-BenchmarkMCPI-48       	       1	2235208620 ns/op	  186384 B/op	    1809 allocs/op
-BenchmarkMatMult-48    	       1	6396963608 ns/op	 8003632 B/op	       2 allocs/op
-BenchmarkMatMult-48    	       1	6285710311 ns/op	 8005424 B/op	       5 allocs/op
-BenchmarkMatMult-48    	       1	5735170168 ns/op	 8003632 B/op	       2 allocs/op
-BenchmarkMatMult-48    	       1	5546211074 ns/op	 8003632 B/op	       2 allocs/op
-BenchmarkMatMult-48    	       1	5257303585 ns/op	 8003632 B/op	       2 allocs/op
-BenchmarkRelu-48       	     100	  12345826 ns/op	 8003703 B/op	       2 allocs/op
-BenchmarkRelu-48       	     100	  10936202 ns/op	 8003632 B/op	       2 allocs/op
-BenchmarkRelu-48       	     100	  11158443 ns/op	 8003667 B/op	       2 allocs/op
-BenchmarkRelu-48       	     100	  11413906 ns/op	 8003632 B/op	       2 allocs/op
-BenchmarkRelu-48       	     100	  11465151 ns/op	 8003632 B/op	       2 allocs/op
+BenchmarkGoroutines-48    	   20000	     87259 ns/op	       3 B/op	       0 allocs/op
+BenchmarkGoroutines-48    	   20000	     88718 ns/op	       0 B/op	       0 allocs/op
+BenchmarkGoroutines-48    	   20000	     88630 ns/op	       0 B/op	       0 allocs/op
+BenchmarkGoroutines-48    	   20000	     86139 ns/op	      22 B/op	       0 allocs/op
+BenchmarkGoroutines-48    	   20000	     86899 ns/op	       0 B/op	       0 allocs/op
+BenchmarkMCPI-48          	       1	3048563915 ns/op	  189520 B/op	    2064 allocs/op
+BenchmarkMCPI-48          	       1	1712620088 ns/op	  183568 B/op	    1998 allocs/op
+BenchmarkMCPI-48          	       1	2823675975 ns/op	  102576 B/op	    1021 allocs/op
+BenchmarkMCPI-48          	       1	2811331809 ns/op	  138480 B/op	    1466 allocs/op
+BenchmarkMCPI-48          	       1	2595394421 ns/op	  145040 B/op	    1557 allocs/op
+BenchmarkMatMult-48       	       1	5932203515 ns/op	 8005424 B/op	       5 allocs/op
+BenchmarkMatMult-48       	       1	4765884143 ns/op	 8005424 B/op	       5 allocs/op
+BenchmarkMatMult-48       	       1	5197234080 ns/op	 8005424 B/op	       5 allocs/op
+BenchmarkMatMult-48       	       1	5416655786 ns/op	 8003632 B/op	       2 allocs/op
+BenchmarkMatMult-48       	       1	5443103267 ns/op	 8003632 B/op	       2 allocs/op
+BenchmarkRelu-48          	     100	  12025828 ns/op	 8003686 B/op	       2 allocs/op
+BenchmarkRelu-48          	     100	  11413450 ns/op	 8003650 B/op	       2 allocs/op
+BenchmarkRelu-48          	     100	  11626419 ns/op	 8003632 B/op	       2 allocs/op
+BenchmarkRelu-48          	     100	  10884127 ns/op	 8003632 B/op	       2 allocs/op
+BenchmarkRelu-48          	     100	  10561222 ns/op	 8003650 B/op	       2 allocs/op
 PASS
-ok  	_/home/rmjiang/cs263_proj/benchmarks	47.616s
+ok  	_/home/rmjiang/cs263_proj/benchmarks	59.806s
