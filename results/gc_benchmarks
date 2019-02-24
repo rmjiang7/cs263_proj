@@ -1,24 +1,24 @@
 goos: linux
 goarch: amd64
-BenchmarkGoroutines-48    	   20000	     87259 ns/op	       3 B/op	       0 allocs/op
-BenchmarkGoroutines-48    	   20000	     88718 ns/op	       0 B/op	       0 allocs/op
-BenchmarkGoroutines-48    	   20000	     88630 ns/op	       0 B/op	       0 allocs/op
-BenchmarkGoroutines-48    	   20000	     86139 ns/op	      22 B/op	       0 allocs/op
-BenchmarkGoroutines-48    	   20000	     86899 ns/op	       0 B/op	       0 allocs/op
-BenchmarkMCPI-48          	       1	3048563915 ns/op	  189520 B/op	    2064 allocs/op
-BenchmarkMCPI-48          	       1	1712620088 ns/op	  183568 B/op	    1998 allocs/op
-BenchmarkMCPI-48          	       1	2823675975 ns/op	  102576 B/op	    1021 allocs/op
-BenchmarkMCPI-48          	       1	2811331809 ns/op	  138480 B/op	    1466 allocs/op
-BenchmarkMCPI-48          	       1	2595394421 ns/op	  145040 B/op	    1557 allocs/op
-BenchmarkMatMult-48       	       1	5932203515 ns/op	 8005424 B/op	       5 allocs/op
-BenchmarkMatMult-48       	       1	4765884143 ns/op	 8005424 B/op	       5 allocs/op
-BenchmarkMatMult-48       	       1	5197234080 ns/op	 8005424 B/op	       5 allocs/op
-BenchmarkMatMult-48       	       1	5416655786 ns/op	 8003632 B/op	       2 allocs/op
-BenchmarkMatMult-48       	       1	5443103267 ns/op	 8003632 B/op	       2 allocs/op
-BenchmarkRelu-48          	     100	  12025828 ns/op	 8003686 B/op	       2 allocs/op
-BenchmarkRelu-48          	     100	  11413450 ns/op	 8003650 B/op	       2 allocs/op
-BenchmarkRelu-48          	     100	  11626419 ns/op	 8003632 B/op	       2 allocs/op
-BenchmarkRelu-48          	     100	  10884127 ns/op	 8003632 B/op	       2 allocs/op
-BenchmarkRelu-48          	     100	  10561222 ns/op	 8003650 B/op	       2 allocs/op
+BenchmarkGoroutines-8   	   50000	     31035 ns/op	      12 B/op	       0 allocs/op
+BenchmarkGoroutines-8   	   50000	     31757 ns/op	      14 B/op	       0 allocs/op
+BenchmarkGoroutines-8   	   50000	     31541 ns/op	      34 B/op	       0 allocs/op
+BenchmarkGoroutines-8   	   50000	     31291 ns/op	       0 B/op	       0 allocs/op
+BenchmarkGoroutines-8   	   50000	     32587 ns/op	       7 B/op	       0 allocs/op
+BenchmarkMCPI-8         	       5	 283096061 ns/op	   41881 B/op	     249 allocs/op
+BenchmarkMCPI-8         	       5	 272096590 ns/op	   41193 B/op	     241 allocs/op
+BenchmarkMCPI-8         	       5	 281903163 ns/op	   46489 B/op	     299 allocs/op
+BenchmarkMCPI-8         	       5	 281467882 ns/op	   43408 B/op	     264 allocs/op
+BenchmarkMCPI-8         	       5	 276571350 ns/op	   43385 B/op	     266 allocs/op
+BenchmarkMatMult-8      	       1	2939422409 ns/op	 8003632 B/op	       2 allocs/op
+BenchmarkMatMult-8      	       1	3442254466 ns/op	 8003632 B/op	       2 allocs/op
+BenchmarkMatMult-8      	       1	3171346980 ns/op	 8003632 B/op	       2 allocs/op
+BenchmarkMatMult-8      	       1	3722027823 ns/op	 8005296 B/op	       5 allocs/op
+BenchmarkMatMult-8      	       1	3692513556 ns/op	 8003632 B/op	       2 allocs/op
+BenchmarkRelu-8         	     300	   5346802 ns/op	 8003637 B/op	       2 allocs/op
+BenchmarkRelu-8         	     300	   5154933 ns/op	 8003632 B/op	       2 allocs/op
+BenchmarkRelu-8         	     300	   5334122 ns/op	 8003632 B/op	       2 allocs/op
+BenchmarkRelu-8         	     300	   4855619 ns/op	 8003632 B/op	       2 allocs/op
+BenchmarkRelu-8         	     300	   5116551 ns/op	 8003632 B/op	       2 allocs/op
 PASS
-ok  	_/home/rmjiang/cs263_proj/benchmarks	59.806s
+ok  	_/home/bhuynh/Projects/cs263_proj/benchmarks	50.224s
