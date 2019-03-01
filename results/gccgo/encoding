@@ -1,0 +1,64 @@
+goos: linux
+goarch: amd64
+BenchmarkCodeEncoder-48           	     500	   2153238 ns/op	 901.19 MB/s	  441102 B/op	       2 allocs/op
+BenchmarkCodeEncoder-48           	     500	   2050440 ns/op	 946.37 MB/s	  440986 B/op	       2 allocs/op
+BenchmarkCodeEncoder-48           	     500	   2101454 ns/op	 923.39 MB/s	  441072 B/op	       2 allocs/op
+BenchmarkCodeEncoder-48           	    1000	   2024696 ns/op	 958.40 MB/s	  220511 B/op	       1 allocs/op
+BenchmarkCodeEncoder-48           	     500	   2132410 ns/op	 909.99 MB/s	  441146 B/op	       2 allocs/op
+BenchmarkCodeMarshal-48           	     500	   2168379 ns/op	 894.89 MB/s	 4592246 B/op	      16 allocs/op
+BenchmarkCodeMarshal-48           	     500	   2292736 ns/op	 846.36 MB/s	 4592426 B/op	      16 allocs/op
+BenchmarkCodeMarshal-48           	     500	   2281993 ns/op	 850.34 MB/s	 4592308 B/op	      16 allocs/op
+BenchmarkCodeMarshal-48           	     500	   2208754 ns/op	 878.54 MB/s	 4592305 B/op	      16 allocs/op
+BenchmarkCodeMarshal-48           	     500	   2243838 ns/op	 864.80 MB/s	 4592267 B/op	      16 allocs/op
+BenchmarkCodeDecoder-48           	      10	 301823049 ns/op	   6.43 MB/s	14115015 B/op	  156649 allocs/op
+BenchmarkCodeDecoder-48           	      10	 363186396 ns/op	   5.34 MB/s	14112428 B/op	  156649 allocs/op
+BenchmarkCodeDecoder-48           	      10	 149818345 ns/op	  12.95 MB/s	14112180 B/op	  156649 allocs/op
+BenchmarkCodeDecoder-48           	      10	 182073083 ns/op	  10.66 MB/s	14112183 B/op	  156649 allocs/op
+BenchmarkCodeDecoder-48           	      10	 263571508 ns/op	   7.36 MB/s	14112170 B/op	  156649 allocs/op
+BenchmarkUnicodeDecoder-48        	 2000000	       996 ns/op	  14.04 MB/s	      36 B/op	       2 allocs/op
+BenchmarkUnicodeDecoder-48        	 1000000	      1079 ns/op	  12.97 MB/s	      36 B/op	       2 allocs/op
+BenchmarkUnicodeDecoder-48        	 1000000	      1072 ns/op	  13.05 MB/s	      36 B/op	       2 allocs/op
+BenchmarkUnicodeDecoder-48        	 1000000	      1091 ns/op	  12.83 MB/s	      36 B/op	       2 allocs/op
+BenchmarkUnicodeDecoder-48        	 1000000	      1023 ns/op	  13.68 MB/s	      36 B/op	       2 allocs/op
+BenchmarkDecoderStream-48         	 2000000	       935 ns/op	      16 B/op	       2 allocs/op
+BenchmarkDecoderStream-48         	 2000000	       929 ns/op	      16 B/op	       2 allocs/op
+BenchmarkDecoderStream-48         	 2000000	       932 ns/op	      16 B/op	       2 allocs/op
+BenchmarkDecoderStream-48         	 2000000	       855 ns/op	      16 B/op	       2 allocs/op
+BenchmarkDecoderStream-48         	 2000000	       843 ns/op	      16 B/op	       2 allocs/op
+BenchmarkCodeUnmarshal-48         	      20	  64092097 ns/op	  30.28 MB/s	 4097628 B/op	  156610 allocs/op
+BenchmarkCodeUnmarshal-48         	      20	  66446794 ns/op	  29.20 MB/s	 4093997 B/op	  156608 allocs/op
+BenchmarkCodeUnmarshal-48         	      20	  61725274 ns/op	  31.44 MB/s	 4092514 B/op	  156608 allocs/op
+BenchmarkCodeUnmarshal-48         	      20	  66018620 ns/op	  29.39 MB/s	 4091441 B/op	  156607 allocs/op
+BenchmarkCodeUnmarshal-48         	      20	  70846801 ns/op	  27.39 MB/s	 4091438 B/op	  156607 allocs/op
+BenchmarkCodeUnmarshalReuse-48    	      20	  74586561 ns/op	 4093223 B/op	  156609 allocs/op
+BenchmarkCodeUnmarshalReuse-48    	      20	  61691067 ns/op	 4094714 B/op	  156610 allocs/op
+BenchmarkCodeUnmarshalReuse-48    	      20	  73330163 ns/op	 4091483 B/op	  156609 allocs/op
+BenchmarkCodeUnmarshalReuse-48    	      30	  69109708 ns/op	 4091386 B/op	  156605 allocs/op
+BenchmarkCodeUnmarshalReuse-48    	      30	  68015367 ns/op	 4091383 B/op	  156605 allocs/op
+BenchmarkUnmarshalString-48       	 3000000	       403 ns/op	     304 B/op	       2 allocs/op
+BenchmarkUnmarshalString-48       	 3000000	       416 ns/op	     304 B/op	       2 allocs/op
+BenchmarkUnmarshalString-48       	 3000000	       447 ns/op	     304 B/op	       2 allocs/op
+BenchmarkUnmarshalString-48       	 5000000	       415 ns/op	     304 B/op	       2 allocs/op
+BenchmarkUnmarshalString-48       	 5000000	       428 ns/op	     304 B/op	       2 allocs/op
+BenchmarkUnmarshalFloat64-48      	 3000000	       549 ns/op	     292 B/op	       2 allocs/op
+BenchmarkUnmarshalFloat64-48      	 3000000	       529 ns/op	     292 B/op	       2 allocs/op
+BenchmarkUnmarshalFloat64-48      	 3000000	       569 ns/op	     292 B/op	       2 allocs/op
+BenchmarkUnmarshalFloat64-48      	 2000000	       551 ns/op	     292 B/op	       2 allocs/op
+BenchmarkUnmarshalFloat64-48      	 3000000	       580 ns/op	     292 B/op	       2 allocs/op
+BenchmarkUnmarshalInt64-48        	 5000000	       375 ns/op	     304 B/op	       3 allocs/op
+BenchmarkUnmarshalInt64-48        	 5000000	       402 ns/op	     304 B/op	       3 allocs/op
+BenchmarkUnmarshalInt64-48        	 5000000	       383 ns/op	     304 B/op	       3 allocs/op
+BenchmarkUnmarshalInt64-48        	 5000000	       400 ns/op	     304 B/op	       3 allocs/op
+BenchmarkUnmarshalInt64-48        	 3000000	       416 ns/op	     304 B/op	       3 allocs/op
+BenchmarkIssue10335-48            	 3000000	       580 ns/op	     320 B/op	       4 allocs/op
+BenchmarkIssue10335-48            	 3000000	       486 ns/op	     320 B/op	       4 allocs/op
+BenchmarkIssue10335-48            	 3000000	       519 ns/op	     320 B/op	       4 allocs/op
+BenchmarkIssue10335-48            	 3000000	       525 ns/op	     320 B/op	       4 allocs/op
+BenchmarkIssue10335-48            	 3000000	       514 ns/op	     320 B/op	       4 allocs/op
+BenchmarkUnmapped-48              	 1000000	      1347 ns/op	     576 B/op	      20 allocs/op
+BenchmarkUnmapped-48              	 1000000	      1137 ns/op	     576 B/op	      20 allocs/op
+BenchmarkUnmapped-48              	 1000000	      1183 ns/op	     576 B/op	      20 allocs/op
+BenchmarkUnmapped-48              	 1000000	      1470 ns/op	     576 B/op	      20 allocs/op
+BenchmarkUnmapped-48              	 1000000	      1149 ns/op	     576 B/op	      20 allocs/op
+PASS
+ok  	command-line-arguments	125.509s

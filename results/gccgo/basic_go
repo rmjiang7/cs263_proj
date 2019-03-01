@@ -1,0 +1,54 @@
+goos: linux
+goarch: amd64
+BenchmarkGoroutines5-48                  	  200000	      5619 ns/op	      46 B/op	       5 allocs/op
+BenchmarkGoroutines5-48                  	  200000	      5363 ns/op	      41 B/op	       5 allocs/op
+BenchmarkGoroutines5-48                  	  300000	      5809 ns/op	      40 B/op	       5 allocs/op
+BenchmarkGoroutines5-48                  	  200000	      5492 ns/op	      40 B/op	       5 allocs/op
+BenchmarkGoroutines5-48                  	  300000	      6333 ns/op	      41 B/op	       5 allocs/op
+BenchmarkGoroutines10-48                 	  100000	     13024 ns/op	      80 B/op	      10 allocs/op
+BenchmarkGoroutines10-48                 	  200000	     10733 ns/op	      80 B/op	      10 allocs/op
+BenchmarkGoroutines10-48                 	  100000	     10891 ns/op	      80 B/op	      10 allocs/op
+BenchmarkGoroutines10-48                 	  200000	      8649 ns/op	      80 B/op	      10 allocs/op
+BenchmarkGoroutines10-48                 	  200000	     10353 ns/op	      80 B/op	      10 allocs/op
+BenchmarkGoroutines100-48                	   10000	    115793 ns/op	     802 B/op	     100 allocs/op
+BenchmarkGoroutines100-48                	   20000	     83210 ns/op	     800 B/op	     100 allocs/op
+BenchmarkGoroutines100-48                	   10000	    112296 ns/op	     800 B/op	     100 allocs/op
+BenchmarkGoroutines100-48                	   20000	     83467 ns/op	     806 B/op	     100 allocs/op
+BenchmarkGoroutines100-48                	   20000	     86816 ns/op	     800 B/op	     100 allocs/op
+BenchmarkLoops100-48                     	2000000000	         0.00 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLoops100-48                     	2000000000	         0.00 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLoops100-48                     	2000000000	         0.00 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLoops100-48                     	2000000000	         0.00 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLoops100-48                     	2000000000	         0.00 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLoops1000-48                    	2000000000	         0.00 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLoops1000-48                    	2000000000	         0.00 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLoops1000-48                    	2000000000	         0.00 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLoops1000-48                    	2000000000	         0.00 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLoops1000-48                    	2000000000	         0.00 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLoops10000-48                   	2000000000	         0.00 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLoops10000-48                   	2000000000	         0.00 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLoops10000-48                   	2000000000	         0.00 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLoops10000-48                   	2000000000	         0.00 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLoops10000-48                   	2000000000	         0.00 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLoops100000-48                  	2000000000	         0.00 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLoops100000-48                  	2000000000	         0.00 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLoops100000-48                  	2000000000	         0.00 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLoops100000-48                  	2000000000	         0.00 ns/op	       0 B/op	       0 allocs/op
+BenchmarkLoops100000-48                  	2000000000	         0.00 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFunctionCalling-48              	2000000000	         0.00 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFunctionCalling-48              	2000000000	         0.00 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFunctionCalling-48              	2000000000	         0.00 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFunctionCalling-48              	2000000000	         0.00 ns/op	       0 B/op	       0 allocs/op
+BenchmarkFunctionCalling-48              	2000000000	         0.00 ns/op	       0 B/op	       0 allocs/op
+BenchmarkAllocationEscapeOptimized-48    	2000000000	         0.00 ns/op	       0 B/op	       0 allocs/op
+BenchmarkAllocationEscapeOptimized-48    	2000000000	         0.00 ns/op	       0 B/op	       0 allocs/op
+BenchmarkAllocationEscapeOptimized-48    	2000000000	         0.00 ns/op	       0 B/op	       0 allocs/op
+BenchmarkAllocationEscapeOptimized-48    	2000000000	         0.00 ns/op	       0 B/op	       0 allocs/op
+BenchmarkAllocationEscapeOptimized-48    	2000000000	         0.00 ns/op	       0 B/op	       0 allocs/op
+BenchmarkGarbageCollector-48             	      20	  77979839 ns/op	89600000 B/op	  100000 allocs/op
+BenchmarkGarbageCollector-48             	      20	  82319372 ns/op	89600371 B/op	  100000 allocs/op
+BenchmarkGarbageCollector-48             	      20	  82848622 ns/op	89600000 B/op	  100000 allocs/op
+BenchmarkGarbageCollector-48             	      20	  80154409 ns/op	89600014 B/op	  100000 allocs/op
+BenchmarkGarbageCollector-48             	      20	  83863509 ns/op	89600000 B/op	  100000 allocs/op
+PASS
+ok  	command-line-arguments	36.746s

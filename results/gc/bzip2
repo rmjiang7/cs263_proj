@@ -1,0 +1,19 @@
+goos: linux
+goarch: amd64
+BenchmarkDecodeDigits-48    	     100	  14596968 ns/op	   6.85 MB/s	 3616737 B/op	      39 allocs/op
+BenchmarkDecodeDigits-48    	     100	  14282098 ns/op	   7.00 MB/s	 3616585 B/op	      39 allocs/op
+BenchmarkDecodeDigits-48    	     100	  15415728 ns/op	   6.49 MB/s	 3616585 B/op	      39 allocs/op
+BenchmarkDecodeDigits-48    	     100	  15345745 ns/op	   6.52 MB/s	 3616603 B/op	      39 allocs/op
+BenchmarkDecodeDigits-48    	     100	  14830662 ns/op	   6.74 MB/s	 3616585 B/op	      39 allocs/op
+BenchmarkDecodeTwain-48     	      30	  43286828 ns/op	   8.96 MB/s	 3629238 B/op	      39 allocs/op
+BenchmarkDecodeTwain-48     	      50	  42615862 ns/op	   9.10 MB/s	 3629238 B/op	      39 allocs/op
+BenchmarkDecodeTwain-48     	      50	  36982298 ns/op	  10.49 MB/s	 3629239 B/op	      39 allocs/op
+BenchmarkDecodeTwain-48     	      30	  39467120 ns/op	   9.83 MB/s	 3629239 B/op	      39 allocs/op
+BenchmarkDecodeTwain-48     	      50	  38622480 ns/op	  10.04 MB/s	 3629239 B/op	      39 allocs/op
+BenchmarkDecodeRand-48      	     300	   4710850 ns/op	   3.48 MB/s	 3647799 B/op	      39 allocs/op
+BenchmarkDecodeRand-48      	     300	   4726224 ns/op	   3.47 MB/s	 3647799 B/op	      39 allocs/op
+BenchmarkDecodeRand-48      	     300	   4768760 ns/op	   3.44 MB/s	 3647798 B/op	      39 allocs/op
+BenchmarkDecodeRand-48      	     300	   4753726 ns/op	   3.45 MB/s	 3647799 B/op	      39 allocs/op
+BenchmarkDecodeRand-48      	     300	   4750249 ns/op	   3.45 MB/s	 3647804 B/op	      39 allocs/op
+PASS
+ok  	command-line-arguments	26.528s

@@ -1,0 +1,14 @@
+goos: linux
+goarch: amd64
+BenchmarkMatMult-48    	       1	2100374495 ns/op	 8009008 B/op	      11 allocs/op
+BenchmarkMatMult-48    	       1	2123186005 ns/op	 8009104 B/op	      12 allocs/op
+BenchmarkMatMult-48    	       1	1938603920 ns/op	 8003632 B/op	       2 allocs/op
+BenchmarkMatMult-48    	       1	2105069403 ns/op	 8003632 B/op	       2 allocs/op
+BenchmarkMatMult-48    	       1	2146462917 ns/op	 8005424 B/op	       5 allocs/op
+BenchmarkRelu-48       	     100	  10875550 ns/op	 8003775 B/op	       2 allocs/op
+BenchmarkRelu-48       	     100	  10428508 ns/op	 8003668 B/op	       2 allocs/op
+BenchmarkRelu-48       	     100	  10827866 ns/op	 8003632 B/op	       2 allocs/op
+BenchmarkRelu-48       	     200	  10781211 ns/op	 8003640 B/op	       2 allocs/op
+BenchmarkRelu-48       	     100	  10693936 ns/op	 8003632 B/op	       2 allocs/op
+PASS
+ok  	command-line-arguments	19.461s
