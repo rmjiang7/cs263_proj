@@ -3,6 +3,7 @@
 package main;
 
 import (
+  "fmt"
 	"testing"
 )
 
@@ -26,12 +27,12 @@ func BenchmarkGoroutines5(bench *testing.B) { benchmarkGoroutines(5, bench) }
 func BenchmarkGoroutines10(bench *testing.B) { benchmarkGoroutines(10, bench) }
 func BenchmarkGoroutines100(bench *testing.B) { benchmarkGoroutines(100, bench) }
 
+var global int
 func benchmarkLoops(N int, bench *testing.B) {
   bench.ResetTimer()
-  var global int
   for n:= 0; n < bench.N; n++ {
     for i := 0; i < N; i++ {
-      global += 1
+      global += i 
     }
   }
   global += 1
@@ -42,9 +43,7 @@ func BenchmarkLoops1000(bench *testing.B) { benchmarkLoops(1000, bench) }
 func BenchmarkLoops10000(bench *testing.B) { benchmarkLoops(10000, bench) }
 func BenchmarkLoops100000(bench *testing.B) { benchmarkLoops(100000, bench) }
 
-func callTrivialFunction() {
-}
-
+func callTrivialFunction() {}
 func BenchmarkFunctionCalling(bench *testing.B) {
   bench.ResetTimer()
   for n:= 0; n < bench.N; n++ {
@@ -64,13 +63,6 @@ func EscapeOptimizedFunctionSum() int {
   return sum
 }
 
-func BenchmarkAllocationEscapeOptimized(bench *testing.B) {
-  bench.ResetTimer()
-  for n:= 0; n < bench.N; n++ {
-    EscapeOptimizedFunctionSum()
-  }
-}
-
 func EscapeFunctionNumbers() []int {
   numbers := make([]int, 100)
   for i := range numbers {
@@ -79,7 +71,18 @@ func EscapeFunctionNumbers() []int {
   return numbers
 }
 
-func BenchmarkGarbageCollector(bench *testing.B) {
+func BenchmarkAllocationEscapeNotOptimized(bench *testing.B) {
+  bench.ResetTimer()
+  for n:= 0; n < bench.N; n++ {
+    numbers := EscapeFunctionNumbers()
+    var sum int
+    for _, i := range numbers {
+      sum += i
+    }
+  }
+}
+
+func BenchmarkAllocationFull(bench *testing.B) {
   bench.ResetTimer()
   var global int
   for n:= 0; n < bench.N; n++ {
@@ -92,5 +95,18 @@ func BenchmarkGarbageCollector(bench *testing.B) {
       global += sum
     }
   }
+  fmt.Println(global)
+}
+
+func BenchmarkAllocationEscapeOptimized(bench *testing.B) {
+  bench.ResetTimer()
+  var global int
+  for n:= 0; n < bench.N; n++ {
+    for k := 0; k < 100000; k++ {
+      sum := EscapeOptimizedFunctionSum()
+      global += sum
+    }
+  }
+  fmt.Println(global)
 }
 
