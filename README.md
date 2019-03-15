@@ -36,47 +36,10 @@ cd cs263_proj
 go install
 ```
 
-### Additional Dependencies
-
-Install gonum and test installation.
-```bash
-go get -u -t gonum.org/v1/gonum/...
-go test gonum.org/v1/...
-```
-
 ### Native Go Benchmarking
 
 The run_bechmarks.sh script runs the benchmarks in the benchmarks directory under both the gc and gccgo compilers with the specified gcc flags. Results are stored in the results
 directory.
 
-**TODO** Write scripts to analyze the results.
+There are 10 sets of tests to run under both compilers - it may take a while...
 
-Quick analysis of the results can be done using the [benchstats](https://godoc.org/golang.org/x/perf/cmd/benchstat) tool in the results directory.
-
-benchstat gc_benchmarks gccgo_benchmarks
-
-
-### Profiling Code
-
-
-**TODO:** Current code doesn't seem to run long enough to generate and profiling data...
-
-How to generate profiling files:
-
-```bash
-cs263_proj -cpuprofile cpu.prof -memprofile mem.prof
-```
-
-How to view profiling files:
-
-```bash
-go tool pprof cpu.prof
-```
-
-[Link to more commands and examples](https://blog.golang.org/profiling-go-programs)
-
-**TODO:** Figure out how to use webserver for visualizations? :
-
-```go
-import _ "net/http/pprof"
-```

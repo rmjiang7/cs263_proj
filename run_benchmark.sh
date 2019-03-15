@@ -11,9 +11,9 @@ cd benchmarks
 
 GOGC=100
 echo "Running Basic Benchmarks"
-GOGC=$GOGC go test go_basic_test.go -count=$COUNT -bench=. -benchmem=$BENCHMEM -compiler=gc -gccgoflags="${GCCFLAGS}" > $CURDIR/results/gc/basic_go
+GOGC=$GOGC go test go_basic_test.go -count=$COUNT -bench=. -benchmem=$BENCHMEM -compiler=gc -gccgoflags="-O1 -march=native" -gcflags="-l" > $CURDIR/results/gc/basic_go
 sleep 60
-GOGC=$GOGC go test go_basic_test.go -count=$COUNT -bench=. -benchmem=$BENCHMEM -compiler=gccgo -gccgoflags="${GCCFLAGS}" > $CURDIR/results/gccgo/basic_go
+GOGC=$GOGC go test go_basic_test.go -count=$COUNT -bench=. -benchmem=$BENCHMEM -compiler=gccgo -gccgoflags="-O1 -march=native" -gcflags="-l"> $CURDIR/results/gccgo/basic_go
 sleep 60
 
 GOGC=$GOGC go test pure_go_matrix_test.go -count=$COUNT -bench=. -benchmem=$BENCHMEM -compiler=gc -gccgoflags="${GCCFLAGS}" > $CURDIR/results/gc/matrix
